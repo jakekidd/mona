@@ -1,0 +1,51 @@
+[
+  {
+    "id": "review-1",
+    "author": "Sarah M.",
+    "rating": 5,
+    "text": "Finally a gloss that actually hydrates. I have tried so many that leave my lips feeling worse, but Rose Garden is different. Obsessed.",
+    "shade": "Rose Garden - Classic Rose",
+    "date": "2024-11-15"
+  },
+  {
+    "id": "review-2",
+    "author": "Maya L.",
+    "rating": 5,
+    "text": "The Nude Awakening shade is exactly what I was looking for. Not too pink, not too brown. Just my lips, but glossy and perfect.",
+    "shade": "Nude Awakening - Medium Nude",
+    "date": "2024-11-10"
+  },
+  {
+    "id": "review-3",
+    "author": "Jasmine K.",
+    "rating": 5,
+    "text": "Berry Kiss gives me that effortless put-together look. I wear it every day now.",
+    "shade": "Berry Kiss - Berry",
+    "date": "2024-11-08"
+  },
+  {
+    "id": "review-4",
+    "author": "Emma R.",
+    "rating": 4,
+    "text": "Love the formula and the scent is subtle but lovely. Coral Dream is my summer staple.",
+    "shade": "Coral Dream - Coral",
+    "date": "2024-10-28"
+  },
+  {
+    "id": "review-5",
+    "author": "Nicole T.",
+    "rating": 5,
+    "text": "The plumping effect on Cherry Bomb is real but not uncomfortable. My lips look fuller without any weird tingling.",
+    "shade": "Cherry Bomb - Cherry",
+    "date": "2024-10-20"
+  },
+  {
+    "id": "review-6",
+    "author": "Aaliyah J.",
+    "rating": 5,
+    "text": "Clear Intentions over any lipstick = perfect glossy finish. This is my must-have now.",
+    "shade": "Clear Intentions - Crystal Clear",
+    "date": "2024-10-15"
+  }
+]
+

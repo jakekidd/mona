@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  /* Mona Empire Brand Colors */
+  --color-white: #ffffff;
+  --color-charcoal: #2d2d2d;
+  --color-charcoal-light: #4a4a4a;
+  --color-charcoal-muted: #6b6b6b;
+  
+  /* Accent Pinks - pulled from lip gloss product palette */
+  --color-rose: #e8b4bc;
+  --color-rose-deep: #d4919b;
+  --color-blush: #f5d0d6;
+  --color-coral: #f0a8a0;
+  --color-berry: #c17b8e;
+  --color-nude: #d4a99a;
+  --color-mauve: #c9a0b0;
+  
+  /* Confetti accent colors */
+  --color-confetti-pink: #ffb6c1;
+  --color-confetti-peach: #ffdab9;
+  --color-confetti-lavender: #e6d0f0;
+  --color-confetti-mint: #d0f0e8;
+  
+  /* Typography */
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Outfit", sans-serif;
+  
+  /* Spacing - generous, editorial */
+  --spacing-section: 8rem;
+  --spacing-card: 2rem;
+}

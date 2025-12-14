@@ -1,0 +1,139 @@
+[
+  {
+    "id": "rose-garden",
+    "name": "Rose Garden",
+    "description": "A timeless dusty rose with a glass-like finish. The shade that started it all - universally flattering and effortlessly elegant.",
+    "price": 24,
+    "images": ["/images/products/rose-garden.jpg"],
+    "shades": [
+      { "id": "rose-garden-classic", "name": "Classic Rose", "hex": "#d4919b" },
+      { "id": "rose-garden-deep", "name": "Deep Rose", "hex": "#b87080" },
+      { "id": "rose-garden-nude", "name": "Nude Rose", "hex": "#d4a99a" }
+    ],
+    "finish": "glossy",
+    "tags": ["bestseller", "vegan", "cruelty-free", "hydrating"],
+    "inventory": 150,
+    "ingredients": ["Vitamin E", "Jojoba Oil", "Hyaluronic Acid"],
+    "scent": "Light vanilla"
+  },
+  {
+    "id": "berry-kiss",
+    "name": "Berry Kiss",
+    "description": "A rich berry with subtle shimmer. Bold enough to turn heads, soft enough for every day. Your new signature.",
+    "price": 24,
+    "images": ["/images/products/berry-kiss.jpg"],
+    "shades": [
+      { "id": "berry-kiss-classic", "name": "Berry", "hex": "#c17b8e" },
+      { "id": "berry-kiss-dark", "name": "Dark Berry", "hex": "#8b4d5c" },
+      { "id": "berry-kiss-light", "name": "Berry Blush", "hex": "#d99aad" }
+    ],
+    "finish": "sparkle",
+    "tags": ["bestseller", "vegan", "cruelty-free"],
+    "inventory": 120,
+    "ingredients": ["Vitamin E", "Coconut Oil", "Shea Butter"],
+    "scent": "Mixed berries"
+  },
+  {
+    "id": "coral-dream",
+    "name": "Coral Dream",
+    "description": "Warm coral meets peachy perfection. Summer in a tube - whether you are beachside or boardroom.",
+    "price": 24,
+    "images": ["/images/products/coral-dream.jpg"],
+    "shades": [
+      { "id": "coral-dream-classic", "name": "Coral", "hex": "#f0a8a0" },
+      { "id": "coral-dream-peach", "name": "Peach Coral", "hex": "#f5c4b8" },
+      { "id": "coral-dream-sunset", "name": "Sunset", "hex": "#e8968c" }
+    ],
+    "finish": "glossy",
+    "tags": ["vegan", "cruelty-free", "hydrating"],
+    "inventory": 100,
+    "ingredients": ["Vitamin E", "Avocado Oil", "Hyaluronic Acid"],
+    "scent": "Peach"
+  },
+  {
+    "id": "nude-awakening",
+    "name": "Nude Awakening",
+    "description": "The perfect your-lips-but-better nude. Understated luxury for those who know less is more.",
+    "price": 22,
+    "images": ["/images/products/nude-awakening.jpg"],
+    "shades": [
+      { "id": "nude-awakening-fair", "name": "Fair Nude", "hex": "#e0c4b8" },
+      { "id": "nude-awakening-medium", "name": "Medium Nude", "hex": "#d4a99a" },
+      { "id": "nude-awakening-deep", "name": "Deep Nude", "hex": "#b8887a" }
+    ],
+    "finish": "sheer",
+    "tags": ["bestseller", "vegan", "cruelty-free", "long-lasting"],
+    "inventory": 180,
+    "ingredients": ["Vitamin E", "Jojoba Oil", "Squalane"],
+    "scent": "Unscented"
+  },
+  {
+    "id": "plum-perfect",
+    "name": "Plum Perfect",
+    "description": "Deep plum with a satin finish. Evening elegance bottled. The drama without trying too hard.",
+    "price": 26,
+    "images": ["/images/products/plum-perfect.jpg"],
+    "shades": [
+      { "id": "plum-perfect-classic", "name": "Plum", "hex": "#8e4585" },
+      { "id": "plum-perfect-wine", "name": "Wine", "hex": "#722f37" },
+      { "id": "plum-perfect-mauve", "name": "Mauve", "hex": "#c9a0b0" }
+    ],
+    "finish": "glossy",
+    "tags": ["new", "vegan", "cruelty-free"],
+    "inventory": 90,
+    "ingredients": ["Vitamin E", "Argan Oil", "Collagen Peptides"],
+    "scent": "Plum"
+  },
+  {
+    "id": "cherry-bomb",
+    "name": "Cherry Bomb",
+    "description": "Vibrant cherry red with a plumping effect. For when you want to make an entrance.",
+    "price": 28,
+    "images": ["/images/products/cherry-bomb.jpg"],
+    "shades": [
+      { "id": "cherry-bomb-classic", "name": "Cherry", "hex": "#c41e3a" },
+      { "id": "cherry-bomb-dark", "name": "Dark Cherry", "hex": "#990000" },
+      { "id": "cherry-bomb-sweet", "name": "Sweet Cherry", "hex": "#de3163" }
+    ],
+    "finish": "plumping",
+    "tags": ["new", "vegan", "cruelty-free", "long-lasting"],
+    "inventory": 75,
+    "ingredients": ["Vitamin E", "Peppermint Oil", "Hyaluronic Acid", "Capsicum"],
+    "scent": "Cherry"
+  },
+  {
+    "id": "honey-drip",
+    "name": "Honey Drip",
+    "description": "Warm honey gold with a luminous finish. Sweet, golden, and utterly irresistible.",
+    "price": 26,
+    "images": ["/images/products/honey-drip.jpg"],
+    "shades": [
+      { "id": "honey-drip-classic", "name": "Honey", "hex": "#eb9605" },
+      { "id": "honey-drip-caramel", "name": "Caramel", "hex": "#c68e17" },
+      { "id": "honey-drip-gold", "name": "Gold Rush", "hex": "#d4af37" }
+    ],
+    "finish": "sparkle",
+    "tags": ["vegan", "cruelty-free", "hydrating"],
+    "inventory": 85,
+    "ingredients": ["Vitamin E", "Honey Extract", "Gold Mica"],
+    "scent": "Honey"
+  },
+  {
+    "id": "clear-intentions",
+    "name": "Clear Intentions",
+    "description": "Crystal clear high-shine gloss. Layer over any lip color or wear alone for that clean, glossy look.",
+    "price": 20,
+    "images": ["/images/products/clear-intentions.jpg"],
+    "shades": [
+      { "id": "clear-intentions-clear", "name": "Crystal Clear", "hex": "#ffffff" },
+      { "id": "clear-intentions-pink", "name": "Pink Tint", "hex": "#ffe4e8" },
+      { "id": "clear-intentions-shimmer", "name": "Diamond Shimmer", "hex": "#f8f8f8" }
+    ],
+    "finish": "glossy",
+    "tags": ["bestseller", "vegan", "cruelty-free", "hydrating"],
+    "inventory": 200,
+    "ingredients": ["Vitamin E", "Jojoba Oil", "Hyaluronic Acid"],
+    "scent": "Unscented"
+  }
+]
+
