@@ -7,9 +7,10 @@ import Hero from "@/components/Hero";
 import Bestsellers from "@/components/Bestsellers";
 import ProductGrid from "@/components/ProductGrid";
 import ProductModal from "@/components/ProductModal";
-import ShadeFinder from "@/components/ShadeFinder";
+// import ShadeFinder from "@/components/ShadeFinder";
 import Reviews from "@/components/Reviews";
 import Features from "@/components/Features";
+import SectionDivider from "@/components/SectionDivider";
 import { useCart } from "@/lib/cart";
 import type { Product, Shade, Review } from "@/lib/types";
 import productsData from "@/data/products.json";
@@ -43,10 +44,16 @@ export default function Home() {
           onViewDetails={handleViewDetails}
         />
         
+        <SectionDivider />
+        
+        {/* ShadeFinder commented out for now
         <ShadeFinder 
           products={products}
           onSelectProduct={handleViewDetails}
         />
+        
+        <SectionDivider />
+        */}
         
         <ProductGrid 
           products={products}
@@ -54,7 +61,11 @@ export default function Home() {
           onViewDetails={handleViewDetails}
         />
         
+        <SectionDivider />
+        
         <Features />
+        
+        <SectionDivider />
         
         <Reviews reviews={reviews} />
       </main>

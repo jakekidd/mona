@@ -191,7 +191,7 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
             </div>
             <button
               disabled={items.length === 0}
-              className="w-full py-4 bg-charcoal text-white font-body text-sm tracking-wide rounded-sm hover:bg-charcoal-light transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="btn-gradient w-full py-5 text-white font-body text-base tracking-wide rounded-sm disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-charcoal-muted disabled:transform-none disabled:shadow-none"
             >
               Checkout
             </button>

@@ -4,7 +4,7 @@
     "name": "Rose Garden",
     "description": "A timeless dusty rose with a glass-like finish. The shade that started it all - universally flattering and effortlessly elegant.",
     "price": 24,
-    "images": ["/images/products/rose-garden.jpg"],
+    "images": ["/images/gloss.png"],
     "shades": [
       { "id": "rose-garden-classic", "name": "Classic Rose", "hex": "#d4919b" },
       { "id": "rose-garden-deep", "name": "Deep Rose", "hex": "#b87080" },
@@ -21,7 +21,7 @@
     "name": "Berry Kiss",
     "description": "A rich berry with subtle shimmer. Bold enough to turn heads, soft enough for every day. Your new signature.",
     "price": 24,
-    "images": ["/images/products/berry-kiss.jpg"],
+    "images": ["/images/gloss.png"],
     "shades": [
       { "id": "berry-kiss-classic", "name": "Berry", "hex": "#c17b8e" },
       { "id": "berry-kiss-dark", "name": "Dark Berry", "hex": "#8b4d5c" },
@@ -38,7 +38,7 @@
     "name": "Coral Dream",
     "description": "Warm coral meets peachy perfection. Summer in a tube - whether you are beachside or boardroom.",
     "price": 24,
-    "images": ["/images/products/coral-dream.jpg"],
+    "images": ["/images/gloss.png"],
     "shades": [
       { "id": "coral-dream-classic", "name": "Coral", "hex": "#f0a8a0" },
       { "id": "coral-dream-peach", "name": "Peach Coral", "hex": "#f5c4b8" },
@@ -55,7 +55,7 @@
     "name": "Nude Awakening",
     "description": "The perfect your-lips-but-better nude. Understated luxury for those who know less is more.",
     "price": 22,
-    "images": ["/images/products/nude-awakening.jpg"],
+    "images": ["/images/gloss.png"],
     "shades": [
       { "id": "nude-awakening-fair", "name": "Fair Nude", "hex": "#e0c4b8" },
       { "id": "nude-awakening-medium", "name": "Medium Nude", "hex": "#d4a99a" },
@@ -72,7 +72,7 @@
     "name": "Plum Perfect",
     "description": "Deep plum with a satin finish. Evening elegance bottled. The drama without trying too hard.",
     "price": 26,
-    "images": ["/images/products/plum-perfect.jpg"],
+    "images": ["/images/gloss.png"],
     "shades": [
       { "id": "plum-perfect-classic", "name": "Plum", "hex": "#8e4585" },
       { "id": "plum-perfect-wine", "name": "Wine", "hex": "#722f37" },
@@ -89,7 +89,7 @@
     "name": "Cherry Bomb",
     "description": "Vibrant cherry red with a plumping effect. For when you want to make an entrance.",
     "price": 28,
-    "images": ["/images/products/cherry-bomb.jpg"],
+    "images": ["/images/gloss.png"],
     "shades": [
       { "id": "cherry-bomb-classic", "name": "Cherry", "hex": "#c41e3a" },
       { "id": "cherry-bomb-dark", "name": "Dark Cherry", "hex": "#990000" },
@@ -106,7 +106,7 @@
     "name": "Honey Drip",
     "description": "Warm honey gold with a luminous finish. Sweet, golden, and utterly irresistible.",
     "price": 26,
-    "images": ["/images/products/honey-drip.jpg"],
+    "images": ["/images/gloss.png"],
     "shades": [
       { "id": "honey-drip-classic", "name": "Honey", "hex": "#eb9605" },
       { "id": "honey-drip-caramel", "name": "Caramel", "hex": "#c68e17" },
@@ -123,7 +123,7 @@
     "name": "Clear Intentions",
     "description": "Crystal clear high-shine gloss. Layer over any lip color or wear alone for that clean, glossy look.",
     "price": 20,
-    "images": ["/images/products/clear-intentions.jpg"],
+    "images": ["/images/gloss.png"],
     "shades": [
       { "id": "clear-intentions-clear", "name": "Crystal Clear", "hex": "#ffffff" },
       { "id": "clear-intentions-pink", "name": "Pink Tint", "hex": "#ffe4e8" },
@@ -136,4 +136,3 @@
     "scent": "Unscented"
   }
 ]
-

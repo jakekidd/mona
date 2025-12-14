@@ -26,7 +26,7 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function Reviews({ reviews }: ReviewsProps) {
   return (
-    <section className="py-24 px-6">
+    <section className="py-24 px-8 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
           <h2 className="font-display text-3xl md:text-4xl text-charcoal text-center mb-4">

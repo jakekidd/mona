@@ -15,15 +15,21 @@ export default function Bestsellers({ products, onQuickAdd, onViewDetails }: Bes
   const bestsellers = products.filter((p) => p.tags.includes("bestseller")).slice(0, 4);
 
   return (
-    <section id="bestsellers" className="py-24 px-6">
-      <div className="max-w-7xl mx-auto">
+    <section id="bestsellers" className="pt-32 pb-24">
+      <div
+        className="mx-auto"
+        style={{
+          maxWidth: "1280px",
+          paddingInline: "clamp(24px, 6vw, 96px)",
+        }}
+      >
         <ScrollReveal>
-          <h2 className="font-display text-3xl md:text-4xl text-charcoal text-center mb-4">
+          <h2 className="font-display text-3xl md:text-4xl text-charcoal text-left mb-6">
             Bestsellers
           </h2>
         </ScrollReveal>
         <ScrollReveal delay={100}>
-          <p className="font-body text-charcoal-muted text-center mb-16 max-w-lg mx-auto">
+          <p className="font-body text-charcoal-muted text-left mb-16 max-w-2xl">
             The shades everyone is talking about. Customer favorites that deliver 
             every time.
           </p>

@@ -61,31 +61,36 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-24 px-6 bg-blush/10">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-28 bg-blush/10">
+      <div
+        className="mx-auto"
+        style={{
+          maxWidth: "1280px",
+          paddingInline: "clamp(24px, 6vw, 96px)",
+        }}
+      >
         <ScrollReveal>
-          <h2 className="font-display text-3xl md:text-4xl text-charcoal text-center mb-4">
+          <h2 className="font-display text-3xl md:text-4xl text-charcoal text-left mb-6">
             What Makes Us Different
           </h2>
         </ScrollReveal>
         <ScrollReveal delay={100}>
-          <p className="font-body text-charcoal-muted text-center mb-16 max-w-lg mx-auto">
-            Every formula is crafted with care. These are not just buzzwords - they 
-            are promises.
+          <p className="font-body text-charcoal-muted text-left mb-16 max-w-2xl">
+            Every formula is crafted with care. These are not just buzzwords - they are promises.
           </p>
         </ScrollReveal>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14">
           {features.map((feature, index) => (
             <ScrollReveal key={index} delay={200 + index * 100}>
-              <div className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white border border-charcoal/10 text-rose-deep mb-4 transition-transform hover:scale-110">
+              <div className="text-left">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white border border-charcoal/10 text-rose-deep mb-5 transition-transform hover:scale-110">
                   {feature.icon}
                 </div>
                 <h3 className="font-display text-lg text-charcoal mb-2">
                   {feature.title}
                 </h3>
-                <p className="font-body text-sm text-charcoal-muted leading-relaxed">
+                <p className="font-body text-sm text-charcoal-muted leading-relaxed max-w-sm">
                   {feature.description}
                 </p>
               </div>

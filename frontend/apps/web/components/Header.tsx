@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import CartDrawer from "./CartDrawer";
 import { useCart } from "@/lib/cart";
 
@@ -12,10 +13,17 @@ export default function Header() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-sm border-b border-charcoal/5">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="font-display text-xl tracking-wide text-charcoal hover:text-charcoal-light">
-            Mona Empire
+          <Link href="/" className="relative w-10 h-10 hover:opacity-80 transition-opacity">
+            <Image
+              src="/images/me.png"
+              alt="Mona Empire"
+              fill
+              className="object-contain"
+              sizes="40px"
+              priority
+            />
           </Link>
 
           {/* Navigation */}

@@ -194,7 +194,7 @@ export default function ProductModal({ product, onClose, onAddToCart }: ProductM
             {/* Add to Cart Button */}
             <button
               onClick={handleAddToCart}
-              className="w-full py-4 bg-charcoal text-white font-body text-sm tracking-wide rounded-sm hover:bg-charcoal-light transition-colors mb-8"
+              className="btn-gradient w-full py-5 text-white font-body text-base tracking-wide rounded-sm mb-8"
             >
               Add to Bag - ${(product.price * quantity).toFixed(2)}
             </button>

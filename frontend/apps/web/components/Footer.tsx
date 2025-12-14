@@ -24,11 +24,11 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 border border-charcoal/20 rounded-sm font-body text-sm text-charcoal placeholder:text-charcoal-muted focus:outline-none focus:border-rose-deep transition-colors"
+                  className="flex-1 px-5 py-4 border border-charcoal/20 rounded-sm font-body text-sm text-charcoal placeholder:text-charcoal-muted focus:outline-none focus:border-rose-deep transition-colors"
                 />
                 <button
                   type="submit"
-                  className="px-6 py-3 bg-charcoal text-white font-body text-sm tracking-wide rounded-sm hover:bg-charcoal-light transition-colors"
+                  className="btn-gradient px-8 py-4 text-white font-body text-sm tracking-wide rounded-sm"
                 >
                   Subscribe
                 </button>

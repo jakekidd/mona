@@ -19,17 +19,12 @@ const finishLabels: Record<string, string> = {
 
 export default function ProductCard({ product, onQuickAdd, onViewDetails }: ProductCardProps) {
   const [selectedShade, setSelectedShade] = useState<Shade>(product.shades[0]!);
-  const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div
-      className="group relative"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <div className="group relative flex flex-col">
       {/* Image Container */}
       <div 
-        className="relative aspect-[3/4] bg-blush/20 rounded-sm overflow-hidden cursor-pointer mb-4"
+        className="relative aspect-[3/4] bg-blush/20 rounded-sm overflow-hidden cursor-pointer"
         onClick={() => onViewDetails?.(product)}
       >
         {/* Placeholder gradient - will be replaced with actual image */}
@@ -54,39 +49,20 @@ export default function ProductCard({ product, onQuickAdd, onViewDetails }: Prod
         {/* Tags */}
         <div className="absolute top-3 left-3 flex flex-col gap-1">
           {product.tags.includes("bestseller") && (
-            <span className="px-2 py-1 bg-charcoal text-white text-xs font-body tracking-wide rounded-sm">
+            <span className="px-3 py-1.5 bg-charcoal text-white text-xs font-body tracking-wide rounded-sm">
               Bestseller
             </span>
           )}
           {product.tags.includes("new") && (
-            <span className="px-2 py-1 bg-rose-deep text-white text-xs font-body tracking-wide rounded-sm">
+            <span className="px-3 py-1.5 bg-rose-deep text-white text-xs font-body tracking-wide rounded-sm">
               New
             </span>
           )}
         </div>
-
-        {/* Quick Add Overlay */}
-        <div 
-          className={`absolute inset-0 bg-charcoal/0 flex items-end justify-center pb-4 transition-all duration-300 ${
-            isHovered ? "bg-charcoal/20" : ""
-          }`}
-        >
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              onQuickAdd?.(product, selectedShade);
-            }}
-            className={`px-6 py-3 bg-white text-charcoal font-body text-sm tracking-wide rounded-sm shadow-lg transform transition-all duration-300 hover:bg-charcoal hover:text-white ${
-              isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
-            }`}
-          >
-            Quick Add
-          </button>
-        </div>
       </div>
 
       {/* Product Info */}
-      <div className="space-y-2">
+      <div className="pt-4 pb-2 space-y-2">
         {/* Finish Tag */}
         <span className="font-body text-xs text-charcoal-muted uppercase tracking-wider">
           {finishLabels[product.finish]}
@@ -111,7 +87,7 @@ export default function ProductCard({ product, onQuickAdd, onViewDetails }: Prod
             <button
               key={shade.id}
               onClick={() => setSelectedShade(shade)}
-              className={`w-5 h-5 rounded-full border-2 transition-all duration-200 ${
+              className={`w-6 h-6 rounded-full border-2 transition-all duration-200 ${
                 selectedShade.id === shade.id 
                   ? "border-charcoal scale-110" 
                   : "border-transparent hover:scale-110"
@@ -128,7 +104,14 @@ export default function ProductCard({ product, onQuickAdd, onViewDetails }: Prod
           {selectedShade.name}
         </p>
       </div>
+
+      {/* Add to Cart Button - Always visible */}
+      <button
+        onClick={() => onQuickAdd?.(product, selectedShade)}
+        className="w-full mt-auto px-6 py-4 bg-charcoal text-white font-body text-sm tracking-wide rounded-sm hover:bg-charcoal-light transition-colors"
+      >
+        Add to Cart
+      </button>
     </div>
   );
 }
-

@@ -39,20 +39,30 @@ export default function ProductGrid({ products, onQuickAdd, onViewDetails }: Pro
   }, [products, finishFilter, tagFilter]);
 
   return (
-    <section id="shop" className="py-24 px-6 bg-gradient-to-b from-white to-blush/10">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="font-display text-3xl md:text-4xl text-charcoal text-center mb-16">
+    <section id="shop" className="py-24 bg-gradient-to-b from-white to-blush/10">
+      <div
+        className="mx-auto"
+        style={{
+          maxWidth: "1280px",
+          paddingInline: "clamp(24px, 6vw, 96px)",
+        }}
+      >
+        <h2 className="font-display text-3xl md:text-4xl text-charcoal text-left mb-6">
           Shop All
         </h2>
+        <p className="font-body text-charcoal-muted text-left mb-14 max-w-2xl">
+          Browse the full collection. Filters are here if you want them.
+        </p>
 
         {/* Filters */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-start gap-4 mb-10">
           {/* Finish Filter */}
           <div className="relative">
             <select
               value={finishFilter}
               onChange={(e) => setFinishFilter(e.target.value as Finish | "all")}
-              className="appearance-none px-4 py-2 pr-10 border border-charcoal/20 rounded-sm font-body text-sm text-charcoal bg-white cursor-pointer hover:border-charcoal/40 focus:outline-none focus:border-rose-deep transition-colors"
+              style={{ padding: "1rem 3rem 1rem 1.5rem" }}
+              className="appearance-none border-2 border-charcoal/20 rounded font-body text-base text-charcoal bg-white cursor-pointer hover:border-charcoal/40 focus:outline-none focus:border-rose-deep transition-colors"
             >
               {finishOptions.map((option) => (
                 <option key={option.value} value={option.value}>
@@ -61,7 +71,7 @@ export default function ProductGrid({ products, onQuickAdd, onViewDetails }: Pro
               ))}
             </select>
             <svg
-              className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-charcoal-muted pointer-events-none"
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-charcoal-muted pointer-events-none"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -75,7 +85,8 @@ export default function ProductGrid({ products, onQuickAdd, onViewDetails }: Pro
             <select
               value={tagFilter}
               onChange={(e) => setTagFilter(e.target.value as Tag | "all")}
-              className="appearance-none px-4 py-2 pr-10 border border-charcoal/20 rounded-sm font-body text-sm text-charcoal bg-white cursor-pointer hover:border-charcoal/40 focus:outline-none focus:border-rose-deep transition-colors"
+              style={{ padding: "1rem 3rem 1rem 1.5rem" }}
+              className="appearance-none border-2 border-charcoal/20 rounded font-body text-base text-charcoal bg-white cursor-pointer hover:border-charcoal/40 focus:outline-none focus:border-rose-deep transition-colors"
             >
               {tagOptions.map((option) => (
                 <option key={option.value} value={option.value}>
@@ -84,7 +95,7 @@ export default function ProductGrid({ products, onQuickAdd, onViewDetails }: Pro
               ))}
             </select>
             <svg
-              className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-charcoal-muted pointer-events-none"
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-charcoal-muted pointer-events-none"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -100,7 +111,8 @@ export default function ProductGrid({ products, onQuickAdd, onViewDetails }: Pro
                 setFinishFilter("all");
                 setTagFilter("all");
               }}
-              className="px-4 py-2 font-body text-sm text-charcoal-muted hover:text-charcoal transition-colors underline underline-offset-4"
+              style={{ padding: "1rem 2rem" }}
+              className="font-body text-base text-charcoal-muted hover:text-charcoal transition-colors underline underline-offset-4"
             >
               Clear filters
             </button>
@@ -108,7 +120,7 @@ export default function ProductGrid({ products, onQuickAdd, onViewDetails }: Pro
         </div>
 
         {/* Results Count */}
-        <p className="text-center font-body text-sm text-charcoal-muted mb-8">
+        <p className="text-left font-body text-sm text-charcoal-muted mb-8">
           Showing {filteredProducts.length} {filteredProducts.length === 1 ? "product" : "products"}
         </p>
 
@@ -135,7 +147,7 @@ export default function ProductGrid({ products, onQuickAdd, onViewDetails }: Pro
                 setFinishFilter("all");
                 setTagFilter("all");
               }}
-              className="font-body text-sm text-rose-deep hover:text-berry transition-colors underline underline-offset-4"
+              className="font-body text-base text-rose-deep hover:text-berry transition-colors underline underline-offset-4"
             >
               Clear all filters
             </button>
@@ -145,4 +157,3 @@ export default function ProductGrid({ products, onQuickAdd, onViewDetails }: Pro
     </section>
   );
 }
-

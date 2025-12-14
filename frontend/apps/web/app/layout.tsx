@@ -21,6 +21,10 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Mona Empire | Boutique Lip Gloss",
   description: "Luxurious lip glosses crafted with care. Find your perfect shade.",
+  icons: {
+    icon: "/images/me_favicon.png",
+    apple: "/images/me_favicon.png",
+  },
 };
 
 export default function RootLayout({

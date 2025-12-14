@@ -107,7 +107,7 @@ export default function ShadeFinder({ products, onSelectProduct }: ShadeFinderPr
           </p>
           <button
             onClick={() => setIsStarted(true)}
-            className="px-8 py-4 bg-charcoal text-white font-body text-sm tracking-wide rounded-sm hover:bg-charcoal-light transition-colors"
+            className="btn-gradient px-12 py-5 text-white font-body text-base tracking-wide rounded-sm"
           >
             Take the Quiz
           </button>
