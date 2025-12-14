@@ -26,37 +26,45 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function Reviews({ reviews }: ReviewsProps) {
   return (
-    <section className="py-24 px-8 md:px-16 lg:px-24">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-28">
+      <div
+        className="mx-auto"
+        style={{
+          maxWidth: "1280px",
+          paddingInline: "clamp(24px, 6vw, 96px)",
+        }}
+      >
         <ScrollReveal>
-          <h2 className="font-display text-3xl md:text-4xl text-charcoal text-center mb-4">
+          <h2 className="font-display text-3xl md:text-4xl text-charcoal text-left mb-6">
             What People Are Saying
           </h2>
         </ScrollReveal>
         <ScrollReveal delay={100}>
-          <p className="font-body text-charcoal-muted text-center mb-16 max-w-lg mx-auto">
+          <p className="font-body text-charcoal-muted text-left mb-16 max-w-2xl">
             Real words from real people. No filters, no paid promotions.
           </p>
         </ScrollReveal>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14">
           {reviews.map((review, index) => (
             <ScrollReveal key={review.id} delay={200 + index * 100}>
-              <div className="p-6 bg-white border border-charcoal/10 rounded-sm card-hover">
-                <StarRating rating={review.rating} />
-                <p className="font-body text-charcoal leading-relaxed mt-4 mb-4">
+              <div className="p-8 bg-white border border-charcoal/10 rounded-sm card-hover">
+                <div className="mb-5">
+                  <StarRating rating={review.rating} />
+                </div>
+                <p className="font-body text-charcoal leading-relaxed text-base md:text-[15px] mb-6">
                   &ldquo;{review.text}&rdquo;
                 </p>
-                <div className="flex justify-between items-end">
-                  <div>
+                <div className="pt-5 border-t border-charcoal/10 flex items-end justify-between gap-6">
+                  <div className="min-w-0">
                     <p className="font-body text-sm text-charcoal font-medium">
                       {review.author}
                     </p>
-                    <p className="font-body text-xs text-charcoal-muted mt-0.5">
+                    <p className="font-body text-xs text-charcoal-muted mt-1 truncate">
                       {review.shade}
                     </p>
                   </div>
-                  <p className="font-body text-xs text-charcoal-muted">
+                  <p className="font-body text-xs text-charcoal-muted whitespace-nowrap">
                     {new Date(review.date).toLocaleDateString("en-US", {
                       month: "short",
                       year: "numeric",
