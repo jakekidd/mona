@@ -37,12 +37,21 @@ export default function Hero() {
       </div>
 
       {/* Content - positioned at top of image, below navbar */}
-      <div className="relative z-10" style={{ marginTop: "120px" }}>
+      <div
+        className="relative z-10 w-full"
+        style={{
+          marginTop: "120px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <div
-          className="mx-auto text-center"
           style={{
+            width: "100%",
             maxWidth: "960px",
             paddingInline: "clamp(24px, 5vw, 72px)",
+            textAlign: "center",
           }}
         >
         <h1 
