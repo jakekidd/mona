@@ -7,19 +7,23 @@
   --color-charcoal-light: #4a4a4a;
   --color-charcoal-muted: #6b6b6b;
   
-  /* Accent Pinks - pulled from lip gloss product palette */
-  --color-rose: #e8b4bc;
-  --color-rose-deep: #d4919b;
+  /* Accent Colors (Juicy) */
+  --color-juicy-purple: #ca3cff;
+  --color-juicy-pink: #fe64a3;
+
+  /* Accent Pinks - pulled from lip gloss product palette (some remapped) */
+  --color-rose: #fe64a3;
+  --color-rose-deep: #fe64a3;
   --color-blush: #f5d0d6;
   --color-coral: #f0a8a0;
-  --color-berry: #c17b8e;
+  --color-berry: #ca3cff;
   --color-nude: #d4a99a;
   --color-mauve: #c9a0b0;
   
   /* Confetti accent colors */
-  --color-confetti-pink: #ffb6c1;
+  --color-confetti-pink: #fe64a3;
   --color-confetti-peach: #ffdab9;
-  --color-confetti-lavender: #e6d0f0;
+  --color-confetti-lavender: #ca3cff;
   --color-confetti-mint: #d0f0e8;
   
   /* Typography */

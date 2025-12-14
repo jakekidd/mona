@@ -42,13 +42,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Selection styling */
 ::selection {
-  background-color: var(--color-rose);
-  color: var(--color-charcoal);
+  background-color: var(--color-juicy-purple);
+  color: white;
 }
 
 /* Focus states for accessibility */
 :focus-visible {
-  outline: 2px solid var(--color-rose-deep);
+  outline: 2px solid var(--color-juicy-purple);
   outline-offset: 2px;
 }
 
@@ -178,17 +178,22 @@ a, button {
 
 /* Gradient button - the sexy one */
 .btn-gradient {
-  background: linear-gradient(135deg, var(--color-rose-deep) 0%, var(--color-berry) 50%, var(--color-charcoal) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-juicy-pink) 0%,
+    var(--color-juicy-purple) 55%,
+    var(--color-charcoal) 100%
+  );
   background-size: 200% 200%;
   animation: gradient-shift 3s ease infinite;
   border: none;
-  box-shadow: 0 4px 15px rgba(193, 123, 142, 0.3);
+  box-shadow: 0 6px 18px rgba(202, 60, 255, 0.25), 0 6px 18px rgba(254, 100, 163, 0.18);
   transition: all 0.3s ease;
 }
 
 .btn-gradient:hover {
   background-size: 300% 300%;
-  box-shadow: 0 6px 20px rgba(193, 123, 142, 0.4);
+  box-shadow: 0 10px 26px rgba(202, 60, 255, 0.28), 0 10px 26px rgba(254, 100, 163, 0.22);
   transform: translateY(-2px);
 }
 
